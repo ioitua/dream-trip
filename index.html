@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Follow your dream</title>
+<link rel="stylesheet" href="all.css">
+
+<h1 class="headline">Just,<br>follow your dream</h1>
+<form class="search-form" method="post" action="#">
+  <fieldset class="destinations-group">
+    <legend>Destinations</legend>
+    <p class="group">
+      <label for="departure-place">From</label>
+      <input
+        class="place-control"
+        id="departure-place"
+        name="from"
+        list="cities"
+        value="Kyiv"
+        placeholder="e.g. Kyiv"
+        required
+      >
+    <p class="group">
+      <label for="arriving-place">To</label>
+      <input
+        class="place-control"
+        id="arriving-place"
+        name="to"
+        list="cities"
+        placeholder="e.g. Warsaw"
+        required
+      >
+  </fieldset>
+
+  <fieldset class="dates-group">
+    <legend>Dates</legend>
+    <p class="group">
+      <label for="departure-date">Departure date</label>
+      <input
+        class="date-control"
+        id="departure-date"
+        type="date"
+        name="at"
+        value="2018-03-07"
+        min="2018-03-07"
+        max="2018-09-07"
+        required
+      >
+  </fieldset>
+
+  <button type="submit">
+    Find my trip
+  </button>
+</form>
+
+<datalist id="cities">
+  <option>Kyiv</option>
+  <option>Kharkiv</option>
+  <option>Vienna</option>
+  <option>Warsaw</option>
+  <option>Wroclaw</option>
+</datalist>
